@@ -12,7 +12,7 @@
 graph TD
 A((start))
 B[/x/]
-C{x % 2 == 0?}
+C{x % 2 == 0}
 D[/'even'/]
 E[/'odd'/]
 F(((stop)))
@@ -23,4 +23,20 @@ C --true--> D
 C --false--> E
 D & E --> F
 
+```
+## Pseudocode
+
+```
+// Program menentukan bilangan ganjil dan genap
+
+DECLARE Number: INTEGER
+DECLARE Result: STRING
+
+IF Number MOD 2 = 0 THEN
+    Result <- "genap"
+ELSE
+    Result <- "ganjil"
+ENDIF
+
+OUTPUT "Nomor", Number, "adalah", Result
 ```
