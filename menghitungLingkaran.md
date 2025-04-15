@@ -16,7 +16,7 @@ title: Flowchart
 graph TD
 A((start))
 B[/r, &#960/]
-C{r % 7 == 0?}
+C{r % 7 == 0}
 D[/&#960 = 22/7/]
 E[/&#960 = 3.14/]
 F[luas = &#960 * r * r]
@@ -33,5 +33,26 @@ E --> F
 F --> G
 G --> H
 H --> I
+
+```
+## Pseudocode
+
+```
+DECLARE r: REAL
+DECLARE phi: REAL
+DECLARE luas: REAL
+DECLARE keliling: REAL
+
+IF r MOD 7 = 0 THEN
+    phi <- 22/7
+ELSE
+    phi <- 3.14
+ENDIF
+
+luas <- phi * r * r
+keliling <- 2 * phi * r
+
+OUTPUT "luas lingkaran adalah: ", luas
+OUTPUT "keliling lingkran adalah: ", keliling
 
 ```
