@@ -24,16 +24,14 @@ G[keliling = &#960 * r * 2]
 H[/'luas', "keliling"/]
 I(((stop)))
 
-A a@--> B
-B b@--> C
-C c@--true--> D
-C d@--false--> E
-D dd@--> F
-E e@--> F
-F f@--> G
-G g@--> H
-H h@--> I
+A --> B
+B --> C
+C --true--> D
+C --false--> E
+D --> F
+E --> F
+F --> G
+G --> H
+H --> I
 
-classDef animate stroke-dasharray: 5,5,stroke-dashoffset: 500,animation: dash 15s linear infinite;
-class a,b,c,d,dd,e,f,g,h animate
 ```
