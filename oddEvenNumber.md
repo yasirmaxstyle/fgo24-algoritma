@@ -1,20 +1,22 @@
 # Algoritma Menentukan Bilangan Ganjil dan Genap
 
 1. mulai
-2. tentukan sebuah bilangan
-3. bagi bilangan tersebut dengan 2
-4. apabila hasilnya bilangan bulat maka bilangan tersebut genap, lanjut langkah 6
-5. apabila hasilnya bukan bilangan bulat maka bilangan tersebut ganjil
+2. tentukan sebuah bilangan sebagai "x"
+3. bagi "x" dengan 2
+4. apabila hasilnya habis dibagi 2 maka "x" adalah genap, lanjut langkah 6
+5. apabila tidak maka "x" adalah ganjil
 6. selesai
 
+
+## Flowchart
 
 ```mermaid
 graph TD
 A((start))
 B[/x/]
 C{x % 2 == 0}
-D[/'even'/]
-E[/'odd'/]
+D[/'genap'/]
+E[/'ganjil'/]
 F(((stop)))
 
 A --> B
@@ -29,14 +31,14 @@ D & E --> F
 ```
 // Program menentukan bilangan ganjil dan genap
 
-DECLARE Number: INTEGER
+DECLARE x: INTEGER
 DECLARE Result: STRING
 
-IF Number MOD 2 = 0 THEN
+IF x MOD 2 = 0 THEN
     Result <- "genap"
 ELSE
     Result <- "ganjil"
 ENDIF
 
-OUTPUT "Nomor", Number, "adalah", Result
+OUTPUT "Nomor", x, "adalah", Result
 ```
